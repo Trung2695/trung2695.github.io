@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Black & White Photography</title>
+    <title>My Personal Website</title>
     <style>
         * {
             margin: 0;
@@ -12,9 +12,9 @@
             box-sizing: border-box;
         }
         body {
-            font-family: Arial, sans-serif;
-            background-color: #000;
-            color: #fff;
+            font-family: 'Arial', sans-serif;
+            background-color: #1b1f38; /* Dark blue background */
+            color: #f37335; /* Dark orange text */
             line-height: 1.6;
             margin: 0;
             padding: 0;
@@ -22,70 +22,74 @@
         header {
             text-align: center;
             padding: 20px;
-            background-color: #111;
-            border-bottom: 1px solid #333;
-        }
-        header h1 {
-            font-size: 2.5em;
-            font-weight: 300;
+            background-color: #14213d; /* Navy blue header */
+            color: #ffffff;
         }
         nav {
             text-align: center;
-            margin: 20px 0;
+            background-color: #f37335; /* Dark orange navigation */
+            padding: 10px;
         }
         nav a {
-            color: #fff;
+            color: #ffffff;
             text-decoration: none;
             margin: 0 15px;
-            font-size: 1.2em;
+            font-size: 1.1em;
         }
         nav a:hover {
-            color: #888;
+            color: #ffb36b; /* Lighter orange on hover */
         }
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
+        .container {
             padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
         }
-        .gallery img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            <!--filter: grayscale(100%);-->
-            transition: transform 0.3s;
+        .about, .projects, .contact {
+            margin-bottom: 40px;
         }
-        .gallery img:hover {
-            transform: scale(1.05);
+        h2 {
+            color: #ffffff;
+            margin-bottom: 10px;
         }
         footer {
             text-align: center;
             padding: 10px;
-            background-color: #111;
-            border-top: 1px solid #333;
+            background-color: #14213d; /* Navy blue footer */
+            color: #ffffff;
             font-size: 0.9em;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Black & White Photography</h1>
+        <h1>Welcome to My Personal Website</h1>
     </header>
     <nav>
-        <a href="#home">Home</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#about">About</a>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
     </nav>
-    <section id="gallery" class="gallery">
-        <img src="./Pictures/picture_1.jpg" alt="Photo 1">
-        <img src="./Pictures/picture_2.jpg" alt="Photo 2">
-        <img src="./Pictures/picture_3.jpg" alt="Photo 3">
-        <img src="./Pictures/picture_4.jpg" alt="Photo 4">
-        <img src="./Pictures/picture_5.jpg" alt="Photo 5">
-    </section>
+    <div class="container">
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm Trung Ta (also known as Neville), former SME in the field of KYC/AML. I love creating and working on exciting projects that make a difference. I am currently focussing on programming (C, Python) and web development (HTML, CSS and JS).</p>
+        </section>
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <p>Here are some of the projects I've worked on:</p>
+            <ul>
+                <li>Project 1: Description</li>
+                <li>Project 2: Description</li>
+                <li>Project 3: Description</li>
+            </ul>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <p>If you'd like to get in touch, feel free to email me at <a href="mailto:thanhtrung.taba@gmail.com" style="color: #f37335;">thanhtrung.taba@gmail.com</a>.</p>
+        </section>
+    </div>
     <footer>
-        <p>&copy; 2024 Black & White Photography. All rights reserved.</p>
+        <p>&copy; 2024 Trung Ta. All rights reserved.</p>
     </footer>
 </body>
 </html>
